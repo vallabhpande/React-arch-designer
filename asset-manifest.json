@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React-arch-designer/static/css/main.19402ce4.css",
+    "main.js": "/React-arch-designer/static/js/main.e7c10cf1.js",
+    "static/js/453.b7d064fa.chunk.js": "/React-arch-designer/static/js/453.b7d064fa.chunk.js",
+    "index.html": "/React-arch-designer/index.html",
+    "main.19402ce4.css.map": "/React-arch-designer/static/css/main.19402ce4.css.map",
+    "main.e7c10cf1.js.map": "/React-arch-designer/static/js/main.e7c10cf1.js.map",
+    "453.b7d064fa.chunk.js.map": "/React-arch-designer/static/js/453.b7d064fa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19402ce4.css",
+    "static/js/main.e7c10cf1.js"
+  ]
+}
