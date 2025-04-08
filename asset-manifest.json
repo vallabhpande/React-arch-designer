@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React-arch-designer/static/css/main.2fdb22f9.css",
-    "main.js": "/React-arch-designer/static/js/main.15c32aa3.js",
+    "main.css": "/React-arch-designer/static/css/main.555901c0.css",
+    "main.js": "/React-arch-designer/static/js/main.5e4ad46b.js",
     "static/js/453.b7d064fa.chunk.js": "/React-arch-designer/static/js/453.b7d064fa.chunk.js",
     "index.html": "/React-arch-designer/index.html",
-    "main.2fdb22f9.css.map": "/React-arch-designer/static/css/main.2fdb22f9.css.map",
-    "main.15c32aa3.js.map": "/React-arch-designer/static/js/main.15c32aa3.js.map",
+    "main.555901c0.css.map": "/React-arch-designer/static/css/main.555901c0.css.map",
+    "main.5e4ad46b.js.map": "/React-arch-designer/static/js/main.5e4ad46b.js.map",
     "453.b7d064fa.chunk.js.map": "/React-arch-designer/static/js/453.b7d064fa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fdb22f9.css",
-    "static/js/main.15c32aa3.js"
+    "static/css/main.555901c0.css",
+    "static/js/main.5e4ad46b.js"
   ]
 }
