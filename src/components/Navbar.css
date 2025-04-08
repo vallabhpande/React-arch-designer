@@ -2,17 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #111;
+  background-color: #f4f4f4;
   padding: 1rem 2rem;
-  color: white;
+  color: #333;
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #222;
 }
 
 .nav-links {
@@ -22,14 +24,14 @@
 }
 
 .nav-links li a {
-  color: white;
+  color: #333;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #999;
+  color: #00bcd4;
 }
 
 .hamburger {
@@ -41,7 +43,7 @@
 .bar {
   height: 3px;
   width: 25px;
-  background-color: white;
+  background-color: #333;
   margin: 4px 0;
   transition: 0.4s;
 }
@@ -53,11 +55,12 @@
     position: absolute;
     top: 70px;
     right: 0;
-    background-color: #111;
+    background-color: #f4f4f4;
     width: 100%;
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   }
 
   .nav-links.active {

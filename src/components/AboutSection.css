@@ -7,7 +7,8 @@
 .team-heading {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #333;
+  color: #2c3e50;
+  font-weight: 700;
 }
 
 .team-member {
@@ -15,7 +16,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-align: left;
 }
 
@@ -28,29 +29,31 @@
 }
 
 .team-image {
-  width: 300px;
+  width: 280px;
   height: auto;
-  border-radius: 12px;
+  border-radius: 16px;
   margin: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .team-info {
   max-width: 500px;
   margin: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .team-info h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 0;
-  color: #2c3e50;
+  color: #34495e;
 }
 
 .team-role {
   font-style: italic;
   color: #7f8c8d;
   margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -61,5 +64,6 @@
 
   .team-info {
     max-width: 100%;
+    padding: 10px;
   }
 }

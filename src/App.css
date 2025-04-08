@@ -1,64 +1,115 @@
-.backroundcolor {
+.services-section {
+  padding: 4rem 2rem;
   background: #111;
-  padding: 0;
-  margin: 0;
+  color: #fff;
+  text-align: center;
 }
 
-/* Default for desktop/laptop */
-@media (min-width: 1025px) {
-  .backroundcolor {
-    padding: 20px 60px;
+.services-title {
+  font-size: 2.5rem;
+  color: #00ffff;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  animation: fadeIn 1.2s ease;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: slideUp 1s ease;
+}
+
+.service-card {
+  background: #1a1a1a;
+  border: 1px solid #00ffff30;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 255, 255, 0.3);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #00ffff;
+  animation: popIn 0.8s ease;
+}
+
+.service-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #00ffff;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* Tablet view (768px to 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .backroundcolor {
-    padding: 15px 30px;
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
   }
-
-  .section-title {
-    font-size: 28px;
-  }
-
-  .section-content {
-    font-size: 16px;
+  to {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 
-/* Mobile view (max-width: 767px) */
-@media (max-width: 767px) {
-  .backroundcolor {
-    padding: 10px 15px;
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
   }
-
-  .section-title {
-    font-size: 22px;
-    text-align: center;
-  }
-
-  .section-content {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .portfolio-grid,
-  .testimonials-grid,
-  .services-grid {
-    grid-template-columns: 1fr !important;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    text-align: center;
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
-.app-container{
-  background-color: #111;
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 1.8rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
+  }
+
+  .service-title {
+    font-size: 1.1rem;
+  }
+
+  .service-description {
+    font-size: 0.95rem;
+  }
 }

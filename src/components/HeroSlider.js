@@ -65,9 +65,17 @@ const HeroSlider = () => {
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
-        navigation={true}
+        navigation={false}
         modules={[Autoplay, Pagination, Navigation]}
         className="hero-swiper"
+        breakpoints={{
+          0: {
+            navigation: false,
+          },
+          768: {
+            navigation: true,
+          },
+        }}
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>

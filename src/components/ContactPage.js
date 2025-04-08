@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import './ContactPage.css';
 
 const ContactForm = () => {
   const form = useRef();
@@ -10,15 +11,15 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_4qntza8',          // Service ID
-      'template_lwo0h2j',         // Template ID
+      'service_4qntza8',
+      'template_lwo0h2j',
       form.current,
-      'nPCkXMArzb6sOXFba'         // Public Key
+      'nPCkXMArzb6sOXFba'
     ).then((result) => {
       console.log(result.text);
       setSent(true);
       setError(false);
-      form.current.reset(); // reset form after submit
+      form.current.reset();
     }, (error) => {
       console.log(error.text);
       setError(true);
@@ -26,40 +27,20 @@ const ContactForm = () => {
   };
 
   return (
-    <div style={{ padding: '2rem', background: '#111', color: '#fff', minHeight: '100vh' }}>
-      <h2 style={{ color: '#00ffff', marginBottom: '2rem' }}>Contact Us</h2>
-      <form ref={form} onSubmit={sendEmail} style={{ maxWidth: '500px', margin: '0 auto' }}>
-        <input type="text" name="name" placeholder="Your Name" required style={inputStyle} />
-        <input type="email" name="email" placeholder="Your Email" required style={inputStyle} />
-        <input type="text" name="title" placeholder="Subject" required style={inputStyle} />
-        <textarea name="message" placeholder="Your Message" required rows="5" style={inputStyle}></textarea>
-        <button type="submit" style={buttonStyle}>Send Message</button>
+    <div className="contact-section">
+      <h2 className="contact-title">Contact Us 📧</h2>
+      <form ref={form} onSubmit={sendEmail} className="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="title" placeholder="Subject" required />
+        <textarea name="message" placeholder="Your Message" required rows="5"></textarea>
+        <button type="submit">Send Message</button>
 
-        {sent && <p style={{ color: 'lightgreen', marginTop: '1rem' }}>Message Sent ✅</p>}
-        {error && <p style={{ color: 'red', marginTop: '1rem' }}>Failed to Send ❌</p>}
+        {sent && <p className="success-message">Message Sent ✅</p>}
+        {error && <p className="error-message">Failed to Send ❌</p>}
       </form>
     </div>
   );
-};
-
-const inputStyle = {
-  width: '100%',
-  padding: '0.8rem',
-  marginBottom: '1rem',
-  borderRadius: '0.5rem',
-  border: '1px solid #00ffff',
-  background: '#222',
-  color: '#fff'
-};
-
-const buttonStyle = {
-  padding: '0.8rem 2rem',
-  background: '#00ffff',
-  color: '#000',
-  border: 'none',
-  borderRadius: '0.5rem',
-  cursor: 'pointer',
-  fontWeight: 'bold'
 };
 
 export default ContactForm;

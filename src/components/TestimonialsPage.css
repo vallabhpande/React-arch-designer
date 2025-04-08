@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
 .testimonials-section {
-  background-color: #111;
+  background-color: #f4f4f4;
   padding: 5rem 1.5rem;
   min-height: 100vh;
-  color: white;
+  color: #333;
   font-family: 'Poppins', sans-serif;
   text-align: center;
   overflow-x: hidden;
@@ -13,7 +13,7 @@
 .testimonials-title {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #00ffff;
+  color: #004d40;
   margin-bottom: 3rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -31,12 +31,11 @@
 }
 
 .testimonial-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 255, 255, 0.15);
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
   border-radius: 1rem;
   padding: 2rem;
-  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
-  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   position: relative;
   animation: fadeInUp 0.8s ease;
@@ -44,31 +43,31 @@
 
 .testimonial-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 150, 136, 0.2);
 }
 
 .testimonial-name {
   font-weight: 600;
   font-size: 1.2rem;
   margin-top: 1.2rem;
-  color: #00ffff;
+  color: #00796b;
 }
 
 .testimonial-role {
   font-size: 0.9rem;
-  color: #aaa;
+  color: #777;
   margin-bottom: 1rem;
 }
 
 .testimonial-message {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #ddd;
+  color: #555;
   position: relative;
 }
 
 .stars {
-  color: #ffce00;
+  color: #ffb400;
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
