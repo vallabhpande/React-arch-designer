@@ -1,22 +1,29 @@
-import React from 'react';
-import { Link } from 'react-scroll';
+import React, { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <nav className="navbar">
-      <div className="navbar-logo">
-        <img src="/logo.png" alt="Logo" />
-        <span>Vallabh Designs</span>
-      </div>
-      <ul className="navbar-links">
-        <li><Link to="hero" smooth={true} duration={500}>Home</Link></li>
-        <li><Link to="about" smooth={true} duration={500}>About</Link></li>
-        <li><Link to="portfolio" smooth={true} duration={500}>Portfolio</Link></li>
-        <li><Link to="services" smooth={true} duration={500}>Services</Link></li>
-        <li><Link to="testimonials" smooth={true} duration={500}>Testimonials</Link></li>
-        <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
+      <div className="logo">Vallabh Architect</div>
+      <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+      <div className="hamburger" onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
     </nav>
   );
 };
