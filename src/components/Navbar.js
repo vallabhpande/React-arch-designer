@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">Vallabh Architect</div>
+      <div className="logo">Shreeja Architect And Associates</div>
       <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>

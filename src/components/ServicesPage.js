@@ -23,12 +23,6 @@ const services = [
         "Detailed planning from start to finish ensuring your project is delivered on time and on budget.",
     },
     {
-      title: "Renovation & Remodeling",
-      icon: <FaHammer size={40} className="icon" />,
-      description:
-        "Modernize and transform old spaces into fresh and functional environments.",
-    },
-    {
       title: "Freelancing",
       icon: <FaUserTie size={40} className="icon" />,
       description:
