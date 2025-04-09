@@ -17,14 +17,6 @@ import Footer from './components/Footer';
 import AssociatesPage from './components/AssociatesPage';
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-      easing: 'ease-in-out',
-    });
-  }, []);
-
   return (
     <div className='app-container'>
       <Navbar />

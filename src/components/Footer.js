@@ -4,16 +4,16 @@ import { FaFacebookF, FaInstagram, FaLinkedin, FaPhoneAlt, FaEnvelope } from "re
 
 const Footer = () => {
     return (
-        <footer className="footer" data-aos="fade-up">
+        <footer className="footer" >
             <div className="footer-container">
 
-                <div className="footer-section about" data-aos="fade-right">
+                <div className="footer-section about">
                     <img src="/logo.png" alt="Logo" className="footer-logo" />
                     <h3>Vallabh Designs</h3>
                     <p>Bringing your dream spaces to life with innovative architecture, planning, and design.</p>
                 </div>
 
-                <div className="footer-section links" data-aos="fade-up">
+                <div className="footer-section links" >
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#about">About</a></li>
@@ -24,7 +24,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="footer-section contact" data-aos="fade-left">
+                <div className="footer-section contact">
                     <h4>Contact</h4>
                     <p>
                         <a href="tel:+919876543210" className="footer-contact-link">
@@ -40,7 +40,7 @@ const Footer = () => {
                     </p>
                 </div>
 
-                <div className="footer-section social" data-aos="zoom-in">
+                <div className="footer-section social">
                     <h4>Follow Us</h4>
                     <div className="social-icons">
                         <a href="#"><FaFacebookF /></a>
