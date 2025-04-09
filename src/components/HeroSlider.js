@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./HeroSlider.css";
+import Aos from "aos";
 
 const slides = [
   {
@@ -54,6 +55,14 @@ const HeroSlider = () => {
   const closeModal = () => {
     setSelectedSlide(null);
   };
+
+    useEffect(() => {
+      Aos.init({
+        duration: 1000,
+        once: true,
+        easing: 'ease-in-out',
+      });
+    }, []);
 
   return (
     <>

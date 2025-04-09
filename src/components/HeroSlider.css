@@ -131,3 +131,51 @@
 .close-button:hover {
   background: #333;
 }
+
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .slide-title {
+    font-size: 2.5rem;
+  }
+
+  .slide-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .slide-button {
+    padding: 10px 24px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide-title {
+    font-size: 2rem;
+  }
+
+  .slide-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .slide-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-title {
+    font-size: 1.5rem;
+  }
+
+  .slide-subtitle {
+    font-size: 1rem;
+  }
+
+  .slide-button {
+    font-size: 0.85rem;
+    padding: 8px 18px;
+  }
+}

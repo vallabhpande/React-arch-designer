@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Portfolio.css';
+import Aos from 'aos';
 
 const projects = [
   {
@@ -31,6 +32,14 @@ const projects = [
 
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+
+  React.useEffect(() => {
+      Aos.init({
+        duration: 1000,      // animation duration
+        once: true,          // animation only once per scroll
+        easing: 'ease-in-out',
+      });
+    }, []);
 
   return (
     <div className="portfolio-section">

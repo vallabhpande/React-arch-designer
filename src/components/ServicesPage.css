@@ -7,7 +7,7 @@
 
 .services-title {
   font-size: 2.5rem;
-  color: #004d40; /* Deep teal */
+  color: #2c3e50; /* Deep teal */
   margin-bottom: 3rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -40,7 +40,7 @@
 .icon {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #009688; /* Teal */
+  color: #2c3e50; /* Teal */
   animation: popIn 0.8s ease;
 }
 
@@ -48,12 +48,12 @@
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
-  color: #004d40;
+  color: #2c3e50;
 }
 
 .service-description {
   font-size: 1rem;
-  color: #555;
+  color: #2c3e50;
   line-height: 1.5;
 }
 

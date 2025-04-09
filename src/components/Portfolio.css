@@ -9,7 +9,7 @@
 .portfolio-title {
   font-size: 2.8rem;
   margin-bottom: 10px;
-  color: #00bcd4;
+  color: #2c3e50;
   font-weight: 700;
   letter-spacing: 1px;
   animation: slideDown 0.8s ease-in-out;
@@ -59,7 +59,7 @@
 
 .portfolio-card-title {
   font-size: 1.4rem;
-  color: #00bcd4;
+  color: #2c3e50;
   margin: 10px 0 5px;
   font-weight: 600;
 }
@@ -131,7 +131,7 @@
 }
 
 .close-button:hover {
-  background: #009fb3;
+  color: #2c3e50;
   transform: scale(1.05);
 }
 

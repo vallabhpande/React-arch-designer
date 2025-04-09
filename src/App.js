@@ -13,11 +13,14 @@ import TestimonialsPage from './components/TestimonialsPage';
 import ContactPage from './components/ContactPage';
 import Footer from './components/Footer';
 
+// ✅ Import your new Associates component
+import AssociatesPage from './components/AssociatesPage';
+
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,      // animation duration
-      once: true,          // animation only once per scroll
+      duration: 1000,
+      once: true,
       easing: 'ease-in-out',
     });
   }, []);
@@ -40,6 +43,11 @@ function App() {
 
       <div id="services">
         <ServicesPage />
+      </div>
+
+      {/* ✅ Associates Page */}
+      <div id="associates">
+        <AssociatesPage />
       </div>
 
       <div id="testimonials">

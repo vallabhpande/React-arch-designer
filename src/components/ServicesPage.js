@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaDraftingCompass, FaCubes, FaProjectDiagram, FaHammer, FaUserTie, FaBuilding, FaTree } from "react-icons/fa";
 
 import "./ServicesPage.css";
+import Aos from "aos";
 // Architecture Design , 3D Elevation , Project Planning , Renovation & Remodeling , Freelancing , BPMS (Building Project Management System) , Landscape Architecture Generator
 const services = [
     {
@@ -44,6 +45,15 @@ const services = [
   
 
 const ServicesPage = () => {
+
+  useEffect(() => {
+      Aos.init({
+        duration: 1000,      // animation duration
+        once: true,          // animation only once per scroll
+        easing: 'ease-in-out',
+      });
+    }, []);
+
     return (
         <section className="services-section">
             <h2 className="services-title">Our Services</h2>

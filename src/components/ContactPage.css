@@ -8,7 +8,7 @@
 
 .contact-title {
   font-size: 2.5rem;
-  color: #00ffff;
+  color: #2c3e50;
   margin-bottom: 2rem;
   font-weight: 700;
 }
@@ -37,8 +37,9 @@
 }
 
 .contact-form button {
-  background: #00ffff;
-  color: #000;
+  background: #000;
+  /* color: #000; */
+  color: #f4f4f4;
   padding: 1rem;
   border: none;
   border-radius: 0.5rem;

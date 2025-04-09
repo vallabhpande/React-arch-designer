@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-bottom">
-                &copy; {new Date().getFullYear()} Vallabh Designs. All rights reserved.
+                &copy; {new Date().getFullYear()} Shreejay Architect & Associates.
             </div>
         </footer>
     );

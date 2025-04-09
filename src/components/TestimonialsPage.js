@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./TestimonialsPage.css";
+import Aos from "aos";
 
 const testimonials = [
   {
@@ -33,6 +34,14 @@ const testimonials = [
 ];
 
 const TestimonialsPage = () => {
+
+    useEffect(() => {
+      Aos.init({
+        duration: 1000,
+        once: true,
+        easing: 'ease-in-out',
+      });
+    }, []);
   return (
     <section className="testimonials-section">
       <h2 className="testimonials-title">Testimonials 📣</h2>

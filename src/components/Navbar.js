@@ -14,12 +14,14 @@ const Navbar = () => {
         <div className="logo">Shreejay Architect & Associates</div>
 
         <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#hero" onClick={toggleMenu}>Home</a></li>
+          <li><a href="#about" onClick={toggleMenu}>About</a></li>
+          <li><a href="#portfolio" onClick={toggleMenu}>Portfolio</a></li>
+          <li><a href="#services" onClick={toggleMenu}>Services</a></li>
+          {/* ✅ New Associates link */}
+          <li><a href="#associates" onClick={toggleMenu}>Associates</a></li>
+          <li><a href="#testimonials" onClick={toggleMenu}>Testimonials</a></li>
+          <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
         </ul>
 
         <div className={`hamburger ${isMobileMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
