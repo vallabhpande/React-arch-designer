@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import Shreeja from "./SHREEJAY copy.png"
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,7 +12,10 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="logo">Shreejay Architect & Associates</div>
+        <div className="logo-container">
+          <img src={Shreeja} alt="Logo" className="logo-img" />
+        </div>
+
 
         <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
           <li><a href="#hero" onClick={toggleMenu}>Home</a></li>
