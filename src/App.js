@@ -17,6 +17,14 @@ import Footer from './components/Footer';
 import AssociatesPage from './components/AssociatesPage';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-in-out',
+    });
+  }, []);
+
   return (
     <div className='app-container'>
       <Navbar />
@@ -51,6 +59,19 @@ function App() {
       </div>
 
       <Footer />
+
+      {/* ✅ Floating WhatsApp Button */}
+      <a
+        href="https://wa.me/9623082923" // 👈 Replace with your actual number
+        className="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+          alt="WhatsApp"
+        />
+      </a>
     </div>
   );
 }

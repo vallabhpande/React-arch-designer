@@ -90,7 +90,7 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
@@ -110,5 +110,46 @@
 
   .hamburger {
     display: flex;
+  }
+} */
+
+
+/* ///////////////////////////////////////// */
+
+/* ✅ Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .logo {
+    text-align: center;
+    width: 60%;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center; /* 👈 center menu items */
+    position: static;
+    background-color: transparent;
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 }
