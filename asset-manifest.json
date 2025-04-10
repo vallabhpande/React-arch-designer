@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/React-arch-designer/static/css/main.808c643b.css",
+    "main.css": "/React-arch-designer/static/css/main.dcb37d8c.css",
     "main.js": "/React-arch-designer/static/js/main.d91e37a1.js",
     "static/js/453.b7d064fa.chunk.js": "/React-arch-designer/static/js/453.b7d064fa.chunk.js",
     "static/media/SHREEJAY copy.png": "/React-arch-designer/static/media/SHREEJAY copy.444bbecd634db0ff55e2.png",
     "static/media/IMG-20250409-WA0000.jpg": "/React-arch-designer/static/media/IMG-20250409-WA0000.949531e775b46f4e02b6.jpg",
     "index.html": "/React-arch-designer/index.html",
-    "main.808c643b.css.map": "/React-arch-designer/static/css/main.808c643b.css.map",
+    "main.dcb37d8c.css.map": "/React-arch-designer/static/css/main.dcb37d8c.css.map",
     "main.d91e37a1.js.map": "/React-arch-designer/static/js/main.d91e37a1.js.map",
     "453.b7d064fa.chunk.js.map": "/React-arch-designer/static/js/453.b7d064fa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.808c643b.css",
+    "static/css/main.dcb37d8c.css",
     "static/js/main.d91e37a1.js"
   ]
 }
